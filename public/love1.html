@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love</title>
+    <style>
+        audio::-webkit-media-controls {
+            display: none;
+        }
+
+        .container {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr;
+            column-gap: 5px;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .text {
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .text {
+                font-size: 22px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .text {
+                font-size: 30px;
+            }
+        }
+
+        h1 {
+        
+            text-align: center;
+            color: red;
+        }
+
+        button {
+            font-size: 1em;
+            padding: 10px;
+            margin: 5px;
+       
+
+        }
+       
+        .scrolling-text {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+            color: rgb(228, 7, 7);
+            font-size: 2em;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .scrolling-text {
+                font-size: 2.5em;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .scrolling-text {
+                font-size: 3em;
+            }
+        }
+
+        .scrolling-text span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll 20s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        .home {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Famous Love Story Of City Mandu</h1>
+    <hr>
+    <div class="container">
+        <div class="image">
+            <iframe name="love" height="400" width="100%" >  </iframe> <br>
+            <a href="../assets/images/l.jpeg" target="love"><button>L</button></a>
+            <a href="../assets/images/o.jpeg" target="love"><button>O</button></a>
+            <a href="../assets/images/v.jpeg" target="love"><button>V</button></a>
+            <a href="../assets/images/e.jpeg" target="love"><button>E</button></a> <br>
+            <a href="../assets/images/i.jpeg" target="love"><button>You</button></a>
+
+        </div>
+        <div class="text">
+            <p>Baz Bahadur and Rani Rupmati are two of India's most well-known historical personalities. Their legendary love tale has fascinated countless numbers of people.</p>
+            <p>For the sultan, it was love at first sight—and song—when he heard a woman singing in the woods and decided to pursue the alluring music. As simple as men can be at times, Baz Bahadur was enthralled with the stunning Roopmati the moment he laid eyes on her. The two had just been hanging out and singing a song to each other.</p>
+        </div>
+    </div>
+    <div class="home">
+        <a href="../index.html"><button>Home page</button></a>
+    </div>
+
+    <div class="scrolling-text"><span>Love Beyond Religion 463 Years Back</span></div>
+
+    <iframe src="../assets/audio/128-husn-anuv-jain-128-kbps_U9vyWkKO.mp3" allow="autoplay" id="audio"  style="display: none" frameborder="0"></iframe>
+
+    <audio muted id="player" autoplay loop> 
+       <source src="../assets/audio/128-husn-anuv-jain-128-kbps_U9vyWkKO.mp3">
+    </audio>
+</body>
+
+</html>

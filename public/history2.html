@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architectural Gems of Mandu</title>
+    <style>
+        .container {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr;
+            column-gap: 5px;
+            row-gap: 20px;
+            padding: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text {
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .text {
+                font-size: 22px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .text {
+                font-size: 30px;
+            }
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        button {
+            font-size: 1em;
+            padding: 10px;
+            margin: 5px;
+        }
+        .home {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Architectural Gems of Mandu...</h1>
+    <hr>
+    <div class="container">
+        <div class="image">
+            <img src="../assets/images/h2.jpeg">
+        </div>
+        <div class="text">
+            <p>A close-up view of the intricate architecture can be found at several well-preserved monuments. The
+                Archaeological Survey of India and the State Archaeology Department protect the majority of the ruins.
+                Furthermore, it is important to recognise the efforts made by the ASI and State authorities to preserve
+                this 500–600 year old legacy.</p>
+        </div>
+    </div>
+    <div class="home">
+
+        <a href="../index.html"><button>Home page</button></a>
+    </div>
+</body>
+
+</html>

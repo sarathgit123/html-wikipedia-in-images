@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Heartbreaking Twist</title>
+    <style>
+        audio::-webkit-media-controls {
+            display: none;
+        }
+
+        .container {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr;
+            column-gap: 5px;
+            row-gap: 20px;
+            padding: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text {
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .text {
+                font-size: 22px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .text {
+                font-size: 30px;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+        }
+
+        .home {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            font-size: 1em;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The Heartbreaking Twist</h1>
+    <hr>
+    <div class="container">
+        <div class="image">
+            <img src="../assets/images/final.jpeg" >
+        </div>
+        <div class="text">
+            <p>The Mughal emperor Akbar conquered Rani Rupmati’s and Baz Bahadur’s kingdom, ending their reign. They are
+                said to have killed themselves rather than giving in to Akbar’s forces.</p>
+            <p>And this led to the end of a beautiful loving tale… But, even today it is still alive in the folklore of
+                the Malwa Province.</p>
+        </div>
+    </div>
+    <div class="home">
+        <a href="../index.html"><button>Home page</button></a>
+    </div>
+    <audio controls autoplay loop src="../assets/audio/6c96-501f-4bba-a0ee-66bc45e05d51_[cut_98sec].mp3"></audio>
+</body>
+
+</html>

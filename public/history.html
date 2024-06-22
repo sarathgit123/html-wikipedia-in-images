@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr;
+            column-gap: 5px;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text {
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .text {
+                font-size: 22px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .text {
+                font-size: 30px;
+            }
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        button {
+            font-size: 1em;
+            padding: 10px;
+            margin: 5px;
+        }
+        .home {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>History</h1>
+    <hr>
+    <div class="container">
+        <div class="image">
+            <img src="../assets/images/h1.jpeg">
+        </div>
+        <div class="text">
+            <p>Mandav is situated 2000 feet above sea level on the Vindhyachal Mountain. It may be a little city today,
+                but a millennium ago it was among the biggest cities on Earth.</p>
+            <p>Mandu is a monument to the life, happiness, and love that poet-prince Baz Bahadur had for his stunning
+                consort, Rani Roopmati. Baz Bahadur's Palace, a stunning example of Afghan architecture, is still
+                visible from Roopmati's Pavilion, perched atop a hill, while the balladeers of Malwa continue to sing of
+                the romance between these royal lovers.</p>
+        </div>
+    </div>
+
+    <div class="home">
+        <a href="../index.html"><button>Home page</button></a>
+    </div>
+
+</body>
+
+</html>

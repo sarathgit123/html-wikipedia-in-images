@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia of City Mandav</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1, h3 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 10px;
+        }
+
+        .gallery a {
+            display: block;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+
+        @media (max-width: 400px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Wikipedia of City Mandav</h1>
+    <h3>Click On The Images To See The Story</h3>
+    <div class="gallery">
+        <a href="./public/history.html"><img src="./assets/images/image_part_001.jpg" alt="History Image 1"></a>
+        <a href="./public/history2.html"><img src="./assets/images/image_part_002.jpg" alt="History Image 2"></a>
+        <a href="./public/love1.html"><img src="./assets/images/image_part_003.jpg" alt="Love Story Image 1"></a>
+        <a href="./public/final.html"><img src="./assets/images/image_part_004.jpg" alt="Love Story Image 2"></a>
+    </div>
+</body>
+</html>
